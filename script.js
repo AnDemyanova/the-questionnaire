@@ -41,13 +41,13 @@ form.addEventListener("submit", (event) => {
 });
 
 function showNotification(message, type) {
-    notification.textContent = message;
-    notification.className = `notification ${type}`
-    visible;
+    if (notification) {
+        notification.textContent = message;
+        notification.className = `notification ${type} visible`;
 
-
-    setTimeout(() => {
-        notification.classList.remove("visible");
-        notification.classList.add("hidden");
-    }, 3000);
+        setTimeout(() => {
+            notification.classList.remove("visible");
+            notification.classList.add("hidden");
+        }, 3000);
+    }
 }
