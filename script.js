@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer AnDemyanova'
+                'Authorization': 'Bearer: AnDemyanova'
             },
             body: JSON.stringify({
                 name,
